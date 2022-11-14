@@ -10,10 +10,12 @@ RUN apt-get install -y  \
     libzip-dev  \
     libpng-dev  \
     libjpeg-dev  \
-    libfreetype6-dev
+    libfreetype6-dev \
+    git
 
 RUN docker-php-ext-configure gd --with-jpeg
 RUN docker-php-ext-install pdo pdo_mysql zip gd
 RUN docker-php-ext-install mysqli
 
 COPY php.ini $PHP_INI_DIR
+COPY .gitignore /var/www/html

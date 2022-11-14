@@ -1,0 +1,15 @@
+.idea
+
+/bitrix/
+/upload/
+
+*.log
+**/logs/
+/*.log
+/*.sql
+/*.csv
+/*.json
+/*.txt
+/*.xml
+/*.dt
+*.gz
