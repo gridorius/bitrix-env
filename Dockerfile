@@ -19,3 +19,4 @@ RUN docker-php-ext-install mysqli
 
 COPY php.ini $PHP_INI_DIR
 COPY .gitignore /var/www/html
+COPY index.php /var/www/html
