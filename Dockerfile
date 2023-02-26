@@ -12,7 +12,8 @@ RUN apt-get install -y  \
     libjpeg-dev  \
     libfreetype6-dev \
     git \
-    cron
+    cron \
+    nano
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg=/usr/include/ --enable-gd
 RUN docker-php-ext-install pdo pdo_mysql zip gd
