@@ -11,9 +11,10 @@ RUN apt-get install -y  \
     libpng-dev  \
     libjpeg-dev  \
     libfreetype6-dev \
-    git
+    git \
+    cron
 
-RUN docker-php-ext-configure gd --with-jpeg
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg=/usr/include/ --enable-gd
 RUN docker-php-ext-install pdo pdo_mysql zip gd
 RUN docker-php-ext-install mysqli
 
