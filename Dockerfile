@@ -2,7 +2,7 @@ FROM php:7.4-apache
 
 ENV PHP_TIMEZONE=Europe/Moscow
 ENV PHP_DISPLAY_ERRORS=Off
-ENV PHP_MEMORY_LIMIT=128m
+ENV PHP_MEMORY_LIMIT=500m
 
 RUN apt-get update -y
 RUN apt-get install -y  \
