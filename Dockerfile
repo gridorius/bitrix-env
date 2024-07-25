@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.3-apache
 
 ENV PHP_TIMEZONE=Europe/Moscow
 ENV PHP_DISPLAY_ERRORS=Off
